@@ -7,7 +7,7 @@
 <body>
 <div id="global">
     <p>
-        <h5>${message}</h5>
+        <h5>${message}//${info}//${info1}</h5>
         Product Name: ${product.name}<br/>
         Description: ${product.description}<br/>
         Price: $${product.price}
