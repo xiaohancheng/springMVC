@@ -40,7 +40,13 @@
 	<!-- 加载资源文件 -->
 	<bean id="messageSource"
 		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
-		<property name="basename" value="classpath:messages"></property>
+		<!-- <property name="basename" value="classpath:messages"></property> -->
+		<property name="basenames">
+		<list>
+			<value>classpath:messages</value>
+			<value>classpath:labels</value>
+		</list>
+		</property>
 	</bean>
 	<!-- 利用AcceptHeaderLocaleResolver类实现消息的本地化 -->
 	<bean id="localeResolver"
