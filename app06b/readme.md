@@ -1,0 +1,1 @@
+学习Spring JSR303验证，采用Hibernate Validator
